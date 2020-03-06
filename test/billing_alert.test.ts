@@ -1,4 +1,4 @@
-import { expect as expectCDK, haveResource, SynthUtils, countResources } from '@aws-cdk/assert';
+import { expect as expectCDK, haveResource, countResources } from '@aws-cdk/assert';
 import * as cdk from '@aws-cdk/core';
 import { BillingAlert } from '../lib/billing_alert';
 
