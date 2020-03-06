@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "1.25.0",
+    "@aws-cdk/assert": "1.27.0",
     "@types/jest": "^24.0.22",
     "@types/node": "10.17.5",
     "jest": "^24.9.0",
@@ -17,12 +17,12 @@
     "typescript": "~3.7.2"
   },
   "peerDependencies": {
-    "@aws-cdk/core": "1.25.0"
+    "@aws-cdk/core": "1.27.0"
   },
   "dependencies": {
-    "@aws-cdk/aws-sns": "1.25.0",
-    "@aws-cdk/aws-sns-subscriptions": "1.25.0",
-    "@aws-cdk/aws-sqs": "1.25.0",
-    "@aws-cdk/core": "1.25.0"
+    "@aws-cdk/aws-sns": "1.27.0",
+    "@aws-cdk/aws-sns-subscriptions": "1.27.0",
+    "@aws-cdk/aws-sqs": "1.27.0",
+    "@aws-cdk/core": "1.27.0"
   }
 }
