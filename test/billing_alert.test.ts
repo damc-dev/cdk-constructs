@@ -10,7 +10,7 @@ test('BillingAlert created with no email subscriptions', () => {
 
   expectCDK(stack).to(haveResource("AWS::SNS::Topic"));
   expectCDK(stack).to(haveResource("AWS::CloudWatch::Alarm"));
-  
+
   expectCDK(stack).to(countResources("AWS::SNS::Subscription", 0));
 });
 
@@ -56,7 +56,7 @@ test('BillingAlert created with threshold', () => {
 test('BillingAlert created with subscriptions and threshold', () => {
   const app = new cdk.App();
   const stack = new cdk.Stack(app, "TestStack");
-  
+
   new BillingAlert(stack, 'MyBillingAlert', {
     alarmThreshold: 5,
     emailSubscriptions: [

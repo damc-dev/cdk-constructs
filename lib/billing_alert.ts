@@ -23,12 +23,12 @@ export class BillingAlert extends cdk.Construct {
     /**
      * SNS topic alerts get published to
      */
-    readonly topic: sns.Topic;
+    public readonly topic: sns.Topic;
 
     /**
      * Billing alarm
      */
-    readonly alarm: Alarm;
+    public readonly alarm: Alarm;
 
     constructor(scope: cdk.Construct, id: string, props: BillingAlertProps = {}) {
         super(scope, id);
@@ -54,7 +54,7 @@ export class BillingAlert extends cdk.Construct {
 
         this.alarm.addAlarmAction(new cw_actions.SnsAction(this.topic));
 
-        if(props.emailSubscriptions !== undefined && props.emailSubscriptions.length > 0) { 
+        if(props.emailSubscriptions !== undefined && props.emailSubscriptions.length > 0) {
             props.emailSubscriptions.forEach((email) => {
                 this.topic.addSubscription(new subscriptions.EmailSubscription(email));
             });
