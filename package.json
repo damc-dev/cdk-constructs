@@ -17,7 +17,7 @@
     "build": "jsii",
     "watch": "jsii -w",
     "package": "jsii-pacmak -v",
-    "test": "jest",
+    "test": "npm build && jest",
     "lint": "tslint --fix --project .",
     "clean": "rm -r node_modules dist"
   },
