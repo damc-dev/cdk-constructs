@@ -1,9 +1,5 @@
-# Welcome to your CDK TypeScript Construct Library project!
-
-You should explore the contents of this project. It demonstrates a CDK Construct Library that includes a construct (`CdkConstructs`)
-which contains an Amazon SQS queue that is subscribed to an Amazon SNS topic.
-
-The construct defines an interface (`CdkConstructsProps`) to configure the visibility timeout of the queue.
+# CDK Constructs
+![Node.js CI](https://github.com/damc-dev/cdk-constructs/workflows/Node.js%20CI/badge.svg?branch=master)
 
 ## Useful commands
 
